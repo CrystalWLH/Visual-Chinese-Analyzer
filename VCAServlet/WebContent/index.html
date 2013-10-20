@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	<head>
+		<title>Visual Chinese Online Analyzer</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="author" content="Guan Yuqing" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	
+	<body class="normal">
+		
+		<div class="title">
+			<a id="top"></a>
+			<!--A heading-->
+			<h1>Visual Chinese Online Analyzer</h1>
+			<!--Line break-->
+			<p><br /></p>
+			<hr />
+		</div>
+		
+		<div class="central">
+		<table style="font-size:13px;width:1036px">
+				<tr>
+					<td style="vertical-align:top">
+						<b>WARNING</b>
+						<ol style="margin:5px 0px;">
+							<li>
+								In order to send HTTP POST requests and save PNG images into your disk, 
+								<b>make sure to grant the application</b> to access SocketPermission and FilePermission.
+							</li>
+							<li>
+								It takes approximately <b>half a minute</b> to load the segmenter, generator or database sevlets into the server's memory. 
+								<b>Please be patient</b> when you send requests to these servlets for the first time.
+							</li>
+							<li>Only suitable for <b>Modern Standard Chinese</b>.</li>
+						</ol>
+						<b>Instructions</b><br />
+						<ol style="margin:5px 0px;">
+							<li>Input your text into the original text box, click &quot;Segment&quot;</li>
+							<li>Then click &quot;Generate Trees&quot;.</li>
+							<li>Correct errors made by MMLFSeg(the sLightly modiFied version of MMSeg) and Stanford Parser manually.</li>
+						</ol>
+					</td>
+				</tr>
+				<tr>
+					<td style="vertical-align:top">
+						<script type="text/javascript">
+							<!--
+							document.write("<applet id=\"vca\" code=\"cn.edu.pku.eecs.vca.applet.VisualChineseAnalyzer\" codebase=\"applets\" archive=\"VCAApplet.jar\" mayscript=\"mayscript\" style=\"border:1px solid black\"  width=\"1024px\" height=\"576px\">");
+							document.write("<param name=\"stat\" value=\"free\">");
+							document.write("<param name=\"color\" value=\"black\">");
+							document.write("Your browser does not support Applet! Please download Java Runtime Environment.");
+							document.write("</applet>");
+							// -->
+						</script>
+					</td>
+				</tr>
+				<tr>
+					<td style="vertical-align:top">
+						<b>Functions realized</b>
+						<ol style="margin:5px 0px;">
+							<li>Segment Chinese senetences and generate dependency trees by servlets.</li>						
+							<li>Use servlets to access MySQL Database. (JDBC)</li>
+							<li>Use HTTP requests and responses to handle communications between the applet and 7 servlets.</li>
+							<li>Use multithreading technology to improve the performance of this applet.</li>
+							<li>Signature the JAR file to access FilePermission and SocketPermission.</li>
+						</ol>
+					</td>
+				</tr>
+			</table>
+			<div style="font-size:14px;margin:5px 0px;">Compiled with <b>JDK 1.7.0_05</b></div>
+		</div>
+		
+		<div class="return_to_the_top" title="Return to the Top">
+			<!--An Image-->
+			<!--A hyperlink with a target within this page-->
+			<!--Always show at the bottom of the browser window and help you return to the top of the page-->
+			<a href="#top"><img class="noborder" src="img/up.png" alt="Return to Top" /></a>
+		</div>
+		<div class="footer">
+			<p>Copyleft&copy;2013 Guan Yuqing, Liang Shiyu, Yao Siyu. All Rights Reversed.</p>
+		</div>
+		
+	</body>
+	
+</html>

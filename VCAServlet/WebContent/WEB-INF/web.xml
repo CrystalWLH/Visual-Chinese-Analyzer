@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+  <display-name>VCA</display-name>
+  <description>
+     Visual Chinese Analyzer
+  </description>
+
+<!-- JSPC servlet mappings start -->
+
+    <servlet>
+        <servlet-name>Segmenter</servlet-name>
+        <servlet-class>cn.edu.pku.eecs.vca.servlet.Segmenter</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Segmenter</servlet-name>
+        <url-pattern>/segmenter</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Generator</servlet-name>
+        <servlet-class>cn.edu.pku.eecs.vca.servlet.Generator</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Generator</servlet-name>
+        <url-pattern>/generator</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DbQueryByText</servlet-name>
+        <servlet-class>cn.edu.pku.eecs.vca.servlet.db.DbQueryByText</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DbQueryByText</servlet-name>
+        <url-pattern>/dbQueryByText</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DbQueryAll</servlet-name>
+        <servlet-class>cn.edu.pku.eecs.vca.servlet.db.DbQueryAll</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DbQueryAll</servlet-name>
+        <url-pattern>/dbQueryAll</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DbQueryById</servlet-name>
+        <servlet-class>cn.edu.pku.eecs.vca.servlet.db.DbQueryById</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DbQueryById</servlet-name>
+        <url-pattern>/dbQueryById</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DbDelete</servlet-name>
+        <servlet-class>cn.edu.pku.eecs.vca.servlet.db.DbDelete</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DbDelete</servlet-name>
+        <url-pattern>/dbDelete</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DbSave</servlet-name>
+        <servlet-class>cn.edu.pku.eecs.vca.servlet.db.DbSave</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DbSave</servlet-name>
+        <url-pattern>/dbSave</url-pattern>
+    </servlet-mapping>
+
+<!-- JSPC servlet mappings end -->
+
+</web-app>

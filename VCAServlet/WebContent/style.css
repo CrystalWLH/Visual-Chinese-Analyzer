@@ -1,0 +1,57 @@
+body.normal
+{
+	font-family:"segoe ui", sans-serif;
+	background-image:url("img/bg_main.jpg");
+}
+
+/*No borders of images will be displayed, especially those of image hyperlinks*/
+img.noborder
+{
+	border:0px;
+}
+
+/*Default Title Division*/
+div.title
+{
+	color:white;
+	text-shadow:1px 1px 1px lightgray;
+	text-align:center;
+}
+
+div.title h1
+{
+	font-size:30px;
+}
+
+/*Default Central Block*/
+/*Use a semi-transparent background*/
+div.central
+{
+	overflow:auto;
+	padding:10px;
+	border:1px solid black;
+	background-image:url("img/transparent.png");
+}
+
+div.footer
+{
+	padding:10px;
+	
+	color:white;
+	text-shadow:1px 1px 1px black;
+	text-align:center;
+	vertical-align:middle;
+	
+	font-family:euclid, "times new roman", serif;
+	font-size:16px;
+	font-weight:bold;
+}
+
+/*A icon to help you return to the top*/
+div.return_to_the_top
+{
+	position:fixed;
+	bottom:0px;
+	right:0px;
+	z-index:10;
+}
