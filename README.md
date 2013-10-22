@@ -1,5 +1,5 @@
-VisualChineseAnalyzer
-=====================
+Visual Chinese Analyzer
+=======================
 
 A user-friendly visual dependency parser for Chinese sentences  
 It is based on the Stanford Parser and also includes a SQLite database to store all dependency trees  
