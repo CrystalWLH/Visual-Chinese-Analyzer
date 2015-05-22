@@ -6,7 +6,9 @@ It is based on the Stanford Parser and also includes a SQLite database to store 
   
 - Offline version: In the VisualChineseAnalyzer directory  
     - Usage: Import as an Eclipse project, execute the edu.pku.java.g3l.VisualChineseAnalyzer class  
-  
+
+![image1](1.png)
+
 - Also provide an online version:  
   - The visual part is in the front-end part, based on Java Applet  
   - The processing part is in the back-end part, based on Java Servlet  
